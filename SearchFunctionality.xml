@@ -18,4 +18,26 @@
     </test>
 
 
+    <test  name="Check user can delete and search with new keyword">
+        <classes>
+            <class name="testcases.TC01_SearchFunctionalityTest">
+                <methods>
+                    <include name="CheckUserCanDeleteAndSearchWithNewThing"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test  name="Check Search Field is exist">
+        <classes>
+            <class name="testcases.TC01_SearchFunctionalityTest">
+                <methods>
+                    <include name="CheckSearchFieldIsDisplayed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
 </suite>
