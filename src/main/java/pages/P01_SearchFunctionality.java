@@ -11,10 +11,16 @@ public class P01_SearchFunctionality {
     }
 
     private final By SearchTextArea = By.xpath("//textarea[@id=\"APjFqb\"]");
+    private final By txtAssertion = By.xpath("//div[@class=\"osrp-blk\"]");
 
     public P01_SearchFunctionality UserAddTextInSearchTextArea(String txt) {
-        driver.findElement(this.SearchTextArea).sendKeys(Keys.ENTER);
+        driver.findElement(this.SearchTextArea).sendKeys( txt +Keys.ENTER);
         return this;
+    }
+
+    public Boolean searchTxtAssertion()
+    {
+        return driver.findElement(this.txtAssertion).isDisplayed();
     }
 
 }
