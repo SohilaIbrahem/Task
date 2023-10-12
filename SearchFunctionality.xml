@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SearchTask">
+
+    <parameter name="browser" value=""/>
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+
+    <test  name="Check Search Functionality">
+        <classes>
+            <class name="testcases.TC01_SearchFunctionalityTest">
+                <methods>
+                    <include name="SearchFunctionalityTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

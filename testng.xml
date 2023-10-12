@@ -2,17 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SearchTask">
 
-    <parameter name="browser" value=""/>
-
-    <test  name="Check Search Functionality">
-        <classes>
-            <class name="testcases.TC01_SearchFunctionalityTest">
-                <methods>
-                    <include name="SearchFunctionalityTest"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
+    <suite-files>
+        <suite-file path="SearchFunctionality.xml"/>
+    </suite-files>
 
 </suite>
