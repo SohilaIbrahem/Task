@@ -24,7 +24,7 @@ public class TC01_SearchFunctionalityTest extends TestBase{
         //TODO : take screenshot
         utlity.captureScreenshot(driver, "search");
     }
-    
+
 
     @Test (priority = 2 , description = "Check user can delete and search with new keyword")
     public void CheckUserCanDeleteAndSearchWithNewThing()
