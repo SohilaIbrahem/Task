@@ -26,6 +26,11 @@ public class P01_SearchFunctionality {
         return this;
     }
 
+    public Boolean searchResultSection()
+    {
+        return driver.findElement(this.searchResult).isDisplayed();
+    }
+
     public Boolean searchTxtAssertion()
     {
 
